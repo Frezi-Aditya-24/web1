@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Warung Kopi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdf6f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #6b4f4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slideIn 1s ease-out;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+      animation: zoomIn 1s ease-in-out;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    ul {
+      background: #fff3e6;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    form {
+      background: #fbeada;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #6b4f4f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #523b3b;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>☕ Warung Kopi Favorit Semua Orang</h1>
+  </header>
+
+  <div class="container">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Warung Kopi" />
+
+    <p>
+         Saat pertama kali melangkah masuk ke warung kopi ini, yang langsung terasa adalah aroma kopi hangat yang menyeruak dari balik meja barista. Ruangannya tidak besar, tapi terasa sangat akrab seperti pelukan lembut setelah hari yang panjang.
+         <br><br>
+         Lagu santai tapi pelan terdengar dari sudut ruangan, bercampur dengan suara lembut mesin espresso dan tawa pelan dari pengunjung yang sedang bercerita. Lampu kuning temaram menggantung rendah di atas meja kayu yang sudah agak usang, tapi justru di sanalah letak kehangatannya.
+         <br><br>
+          Ada sesuatu yang membuatku betah berlama-lama di sini entah itu secangkir latte hangat yang selalu pas rasanya, atau senyum ramah mbak barista yang selalu menyapa dengan nama. Di sini, waktu seperti berjalan lebih lambat. Tempat ini bukan sekadar warung kopi ini tempat pulang kedua, tempat menenangkan pikiran.
+    </p>
+
+    <h2>Menu Favorit</h2>
+    <ol>
+      <li>Espresso</li>
+      <li>Latte Vanilla</li>
+      <li>Cappuccino</li>
+      <li>Roti Bakar Cokelat</li>
+      <li>Donat Kopi</li>
+    </ol>
+
+    <h2>Daftar Harga</h2>
+    <table>
+      <tr>
+        <th>Menu</th>
+        <th>Harga</th>
+        <th>Kategori</th>
+      </tr>
+      <tr>
+        <td>Espresso</td>
+        <td>Rp20.000</td>
+        <td>Minuman</td>
+      </tr>
+      <tr>
+        <td>Latte Vanilla</td>
+        <td>Rp25.000</td>
+        <td>Minuman</td>
+      </tr>
+      <tr>
+        <td>Roti Bakar Cokelat</td>
+        <td>Rp18.000</td>
+        <td>Makanan Ringan</td>
+      </tr>
+      <tr>
+        <td>Donat Kopi</td>
+        <td>Rp15.000</td>
+        <td>Makanan Ringan</td>
+      </tr>
+    </table>
+
+    <h2>Formulir Pemesanan</h2>
+    <form>
+      <label>Nama Pelanggan:</label>
+      <input type="text" name="nama" required>
+
+      <label>Pilihan Menu:</label>
+      <select name="menu" required>
+        <option value="">--Pilih Menu--</option>
+        <option>Espresso</option>
+        <option>Latte Vanilla</option>
+        <option>Cappuccino</option>
+        <option>Roti Bakar Cokelat</option>
+        <option>Donat Kopi</option>
+      </select>
+
+      <label>Catatan Tambahan:</label>
+      <textarea name="catatan" rows="4" placeholder="Contoh: tanpa gula, ekstra keju..."></textarea>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </div>
+
+</body>
+</html>
